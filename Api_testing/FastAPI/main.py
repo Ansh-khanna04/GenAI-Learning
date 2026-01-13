@@ -57,7 +57,7 @@ def create_student(stud:Student):
     save_student_to_file_system(stud)
     return {"message":"Student created successfully", "student_data":student_data}
 
-db_url = "postgresql://neondb_owner:npg_aYXRougf6vW5@ep-steep-rain-ahs6u70k-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+db_url = "postgresql://neondb_owner:npg_aYXRouff6vW5@ep-steep-rain-ahs6u70k-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
 
 def estabilish_db_connection():
     conn = psycopg2.connect(db_url, cursor_factory=RealDictCursor)
